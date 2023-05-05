@@ -1,0 +1,9 @@
+<form #loginForm="ngForm" (ngSubmit)="verify_user()">
+  <label for="username">Usuario:</label>
+  <input type="text" id="username" name="username" [(ngModel)]="user" required>
+
+  <label for="password">Contraseña:</label>
+  <input type="password" id="password" name="password" [(ngModel)]="password" required>
+
+  <button type="submit">Iniciar sesión</button>
+</form>
